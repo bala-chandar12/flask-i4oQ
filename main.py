@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return jsonify({"Choo Choo": "Welcome to your Flask "})
-post_example', methods=['POST'])
+@app.route('/post_example', methods=['POST'])
 def post_example():
     if request.method == 'POST':
         # Access the data sent in the POST request
