@@ -155,10 +155,10 @@ def post_example():
         # For example, if the JSON contains a key 'message'
         if 'question' in data:
             received_message = data['question']
-            #o=predict(received_message)
+            o=predict(received_message)
 
             #return f"Received message: {o}"
-            return jsonify({"Received message": "ok"})
+            return jsonify({"Received message": o})
         else:
             return "No 'message' key found in the POST request data"
     else:
