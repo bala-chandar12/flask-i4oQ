@@ -23,7 +23,7 @@ def post_example():
             #o=predict(received_message)
 
             #return f"Received message: {o}"
-            return jsonify({"Received message": ok})
+            return jsonify({"Received message": "ok"})
         else:
             return "No 'message' key found in the POST request data"
     else:
