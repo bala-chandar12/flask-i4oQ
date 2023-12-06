@@ -95,10 +95,10 @@ prompt = PromptTemplate(
     input_variables=["history", "input"], template=template
 )
 llm = TogetherLLM(
-    model= 'Open-Orca/Mistral-7B-OpenOrca',
-    temperature = 0.9,
+    model= "togethercomputer/llama-2-70b-chat",
+    temperature = 0.1,
 
-    max_tokens = 624
+    max_tokens = 512
 )
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import (
